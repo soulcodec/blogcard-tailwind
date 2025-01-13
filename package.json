@@ -1,0 +1,13 @@
+{
+  "homepage": "https://soulcodec.github.io/blogcard-tailwind/",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "cp -R ./src ./dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  }
+}
